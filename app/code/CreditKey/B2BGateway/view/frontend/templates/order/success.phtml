@@ -1,0 +1,11 @@
+<script>
+    require([
+        'Magento_Customer/js/customer-data'
+    ], function (customerData) {
+        var sections = ['cart'];
+        setTimeout(function() {
+          customerData.invalidate(sections);
+          customerData.reload(sections, true);
+        }, 1000);
+    });
+</script>

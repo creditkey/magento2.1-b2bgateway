@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="CreditKey\B2BGateway\Block\Product\View\Marketing" name="product.info.creditkey.marketing" before="product.info"
+                    ifconfig="payment/creditkey_gateway/creditkey_productmarketing/active" template="CreditKey_B2BGateway::product/view/marketing.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

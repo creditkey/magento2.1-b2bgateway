@@ -1,0 +1,14 @@
+<?php
+// @codingStandardsIgnoreFile
+/** @var $block \CreditKey\B2BGateway\Block\Product\View\Marketing*/
+?>
+<?php if ($block->isAuthorized()): ?>
+    <div id="creditkey_marketing"></div>
+    <script type="text/x-magento-init">
+        {
+            "#creditkey_marketing": {
+                "CreditKey_B2BGateway/js/view/product/marketing": <?php echo $block->getJsonConfig(); ?>
+            }
+        }
+    </script>
+<?php endif; ?>
