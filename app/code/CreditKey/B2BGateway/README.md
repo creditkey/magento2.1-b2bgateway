@@ -6,12 +6,14 @@ From your root Magento directory, run the following command:
 
 ```
 % composer require creditkey/b2bgateway
+% composer require creditkey/creditkey-php
 ```
+Download and copy folder lib from https://github.com/creditkey/magento2.1-b2bgateway/tree/master/lib to folder lib at root Magento directory 
 
 Then enable the module with the following commands:
 ```
 % php bin/magento module:enable CreditKey_B2BGateway
-% php bin/magento setup:upgrade
+% php bin/magento setup:upgrade && php bin/magento setup:di:compile && php bin/magento setup:static-content:deploy
 ```
 
 ## Configuration
