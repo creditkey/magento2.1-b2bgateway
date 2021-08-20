@@ -6,7 +6,6 @@ From your root Magento directory, run the following command:
 
 ```
 % composer require creditkey/b2bgateway
-% composer require creditkey/creditkey-php
 ```
 Download and copy folder lib from https://github.com/creditkey/magento2.1-b2bgateway/tree/master/lib to folder lib at root Magento directory 
 
